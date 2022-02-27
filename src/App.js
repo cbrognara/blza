@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { AreaLogin } from './routes/AreaLogin/AreaLogin'
+import { AreaLogada } from './routes/AreaLogada/AreaLogada'
+import { Pagina404 } from './routes/Pagina404/Pagina404'
+
+import { Route, Router, Routes } from 'react-router-dom'
+
+import { GlobalStyle } from './styles/gobal'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <AreaLogin />
+      {/* <Router>
+        <Routes>
+          <Route path="/" element={<AreaLogin />} />
+          <Route path="/logada" element={<AreaLogada />} />
+          <Route path="*" element={<Pagina404 />} />
+        </Routes>
+      </Router> */}
+      <GlobalStyle />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
