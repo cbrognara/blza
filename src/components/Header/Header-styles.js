@@ -2,18 +2,35 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 100%;
-  height: 6rem;
-  background: var(--primary-light-300);
+  min-height: 7.2rem;
+  background: var(--primary-light-200);
+  position: fixed;
+  top: 0;
 `
 export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 4rem;
-  padding: 2rem 8rem;
   align-items: center;
-`
-export const Menu = styled.ul`
-  display: flex;
-  flex-wrap: wrap;
-  gap: 4rem;
+  justify-content: space-between;
+
+  a svg {
+    height: 4.8rem;
+    width: 100%;
+    padding-left: 8rem;
+  }
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    width: 100%;
+    align-items: flex-start;
+    gap: 0;
+
+    a svg {
+      height: 3.2rem;
+      padding: 0;
+      margin: 0.8rem;
+      width: 8.8rem;
+    }
+  }
 `

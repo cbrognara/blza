@@ -41,11 +41,24 @@ font-size: 10px;
     box-sizing: border-box;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1, h2 {
     font-family: 'Cormorant Garamond', serif;
+    color: var(--secondary-500);
   }
 
-  a, li, button, p {
+  h2 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 2.4rem;
+    color: var(--secondary-500);
+  }
+
+  a, li, button, p, span {
     font-family: 'Open Sans', sans-serif;
   }
 
