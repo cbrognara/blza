@@ -6,6 +6,7 @@ export const Container = styled.header`
   background: var(--primary-light-200);
   position: fixed;
   top: 0;
+  z-index: 1;
 `
 export const Content = styled.div`
   display: flex;

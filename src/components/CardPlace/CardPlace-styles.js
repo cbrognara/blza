@@ -2,9 +2,11 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 26rem;
-  height: 28rem;
+  height: 30rem;
+  margin: 3rem;
+  background: #ffffff;
 
-  .place-image {
+  img {
     width: 100%;
     height: 12rem;
   }
@@ -14,9 +16,9 @@ export const Container = styled.div`
     width: 23rem;
     font-size: 1.6rem;
     padding: 1.6rem;
-    margin: 0 1.6rem;
     display: flex;
-    align-items: center;
+    align-content: center;
+    margin: 0rem 1.6rem;
     gap: 2rem;
     cursor: pointer;
 
