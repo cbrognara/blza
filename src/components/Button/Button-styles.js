@@ -23,7 +23,7 @@ export const Btn = styled.button`
   }
 
   &:active {
-    background: ${props => theme[props.color].pressed};
+    filter: ${props => theme[props.color].pressed};
   }
 
   &:disabled {
@@ -44,9 +44,9 @@ const theme = {
   secondary: {
     default: 'var(--secondary-300)',
     text: 'var(--secondary-text)',
-    hover: 'brightness(0.8)',
+    hover: 'brightness(0.9)',
     disabled: 'var(--neutral-light-300)',
-    pressed: 'var(--neutral-light-600)'
+    pressed: 'brightness(0.7)'
   }
 }
 

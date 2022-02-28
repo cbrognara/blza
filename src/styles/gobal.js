@@ -35,6 +35,7 @@ font-size: 10px;
 
   }
 
+
   * {
     margin: 0;
     padding: 0;
