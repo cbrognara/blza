@@ -27,4 +27,3 @@ export const FavoriteSection = styled.div`
     }
   }
 `
-export const CardSection = styled.div``

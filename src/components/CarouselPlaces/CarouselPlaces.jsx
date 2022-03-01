@@ -1,4 +1,4 @@
-import { Container } from './styles'
+import { Container } from './Carousel-styles'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import 'swiper/css'
 

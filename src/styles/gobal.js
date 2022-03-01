@@ -9,7 +9,7 @@ font-size: 10px;
 --primary-light-400: #FF9494;
 --primary-light-300: #FFD1D1;
 --primary-light-200: #FFF0EF;
---primary-light-100: #F7F3F3;
+--primary-light-100: #FBF9F9;
 --primary-light-text: #ffffff;
 
 --secondary-500: #112048;
@@ -35,9 +35,9 @@ font-size: 10px;
 
   }
 
-
   * {
     margin: 0;
+    font-family: 'Open Sans', sans-serif;
     padding: 0;
     box-sizing: border-box;
   }
@@ -57,6 +57,12 @@ font-size: 10px;
     font-family: 'Open Sans', sans-serif;
     line-height: 2.4rem;
     color: var(--secondary-500);
+  }
+
+  h4 {
+    font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--secondary-500);
   }
 
   a, li, button, p, span {

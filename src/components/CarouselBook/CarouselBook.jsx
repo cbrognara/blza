@@ -1,0 +1,46 @@
+import { Container } from './Carousel-styles'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import 'swiper/css'
+import { CardBook } from '../CardBook/CardBook'
+
+export function CarouselBook({ data }) {
+  return (
+    <Container>
+      <Swiper
+        spaceBetween={2}
+        slidesPerView={1}
+        mousewheel={true}
+        breakpoints={{
+          320: {
+            slidesPerView: 1.2,
+            spaceBetween: 0
+          },
+          640: {
+            slidesPerView: 1.8,
+            spaceBetween: 0
+          },
+          768: {
+            slidesPerView: 2.2,
+            spaceBetween: 0
+          },
+          900: {
+            slidesPerView: 2.5,
+            spaceBetween: 0
+          },
+          1090: {
+            slidesPerView: 1.5,
+            spaceBetween: 0
+          }
+        }}
+      >
+        {data.map(item => {
+          return (
+            <SwiperSlide>
+              <CardBook proImage={item.bookInfo.pro.image} />
+            </SwiperSlide>
+          )
+        })}
+      </Swiper>
+    </Container>
+  )
+}
