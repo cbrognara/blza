@@ -3,16 +3,11 @@ import styled from 'styled-components'
 export const Container = styled.div`
   width: 26rem;
   height: 30rem;
-  margin: 3rem;
   background: #ffffff;
-
-  img {
-    width: 100%;
-    height: 12rem;
-  }
 
   button {
     color: var(--primary-light-500);
+    background: #ffffff;
     width: 23rem;
     font-size: 1.6rem;
     padding: 1.6rem;
@@ -60,4 +55,12 @@ export const Location = styled.div`
   svg {
     color: var(--secondary-500);
   }
+`
+export const Img = styled.div`
+  width: 100%;
+  min-width: 26rem;
+  height: 12rem;
+  background-color: var(--primary-light-300);
+  background-image: ${props => `url(${props.imgURL})`};
+  background-size: cover;
 `

@@ -8,6 +8,7 @@ export const Container = styled.section`
   flex-direction: column;
   color: var(--secondary-500);
   margin-top: 10rem;
+  margin-bottom: 8rem;
 
   h2 {
     width: 100%;
