@@ -12,24 +12,29 @@ export function CarouselBook({ data }) {
         mousewheel={true}
         breakpoints={{
           320: {
+            slidesPerView: 1.15,
+            spaceBetween: 8
+          },
+
+          420: {
             slidesPerView: 1.2,
-            spaceBetween: 0
+            spaceBetween: 8
           },
           640: {
             slidesPerView: 1.8,
-            spaceBetween: 0
+            spaceBetween: 8
           },
           768: {
             slidesPerView: 2.2,
-            spaceBetween: 0
+            spaceBetween: 8
           },
           900: {
             slidesPerView: 2.5,
-            spaceBetween: 0
+            spaceBetween: 8
           },
           1090: {
             slidesPerView: 1.5,
-            spaceBetween: 0
+            spaceBetween: 8
           }
         }}
       >

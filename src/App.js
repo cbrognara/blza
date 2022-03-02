@@ -5,6 +5,7 @@ import { Pagina404 } from './routes/Pagina404/Pagina404'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 
 import { GlobalStyle } from './styles/gobal'
+import AreaPro from './routes/AreaPro/AreaPro'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Routes>
           <Route path="/" element={<AreaLogin />} />
           <Route path="/logada" element={<AreaLogada />} />
+          <Route path="/area-pro" element={<AreaPro />} />
+
           <Route path="*" element={<Pagina404 />} />
         </Routes>
       </BrowserRouter>

@@ -5,6 +5,10 @@ export const ContainerSections = styled.div`
   position: relative;
   margin: 8rem auto;
   padding: 2rem;
+
+  @media (max-width: 480px) {
+    padding: 0;
+  }
 `
 export const FavoriteSection = styled.div`
   background: var(--primary-light-100);

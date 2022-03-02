@@ -6,9 +6,11 @@ export const Container = styled.div`
   background: var(--secondary-500);
   color: var(--secondary-300);
   display: flex;
+  align-items: ${props => (props.starCount ? '' : 'center')};
 
   img {
-    height: 100%;
+    width: 7.2rem;
+    height: 7.2rem;
   }
 
   button {
@@ -23,13 +25,13 @@ export const Container = styled.div`
       background: var(--secondary-400);
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       padding: 0.8rem 1.6rem;
       font-size: 1.6rem;
     }
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 800px) {
     width: 100%;
     height: 5rem;
   }
@@ -56,7 +58,7 @@ export const Container = styled.div`
       }
     }
 
-    @media (max-width: 700px) {
+    @media (max-width: 800px) {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;

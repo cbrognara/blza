@@ -2,12 +2,16 @@ import styled from 'styled-components'
 
 export const Container = styled.header`
   width: 100%;
-  min-height: 7.2rem;
   background: var(--primary-light-200);
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 9999;
+
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `
+
 export const Content = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +25,7 @@ export const Content = styled.div`
     padding-left: 8rem;
   }
 
-  @media (max-width: 700px) {
+  @media (max-width: 768px) {
     flex-direction: column;
     width: 100%;
     align-items: flex-start;

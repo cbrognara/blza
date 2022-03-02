@@ -2,26 +2,27 @@ import React from 'react'
 import { Container } from './LoggedUser-styles'
 import { Star } from 'phosphor-react'
 
-export function LoggedUser({
-  name,
-  data,
-  handleLogout,
-  starCount,
-  perfilImage
-}) {
-  return (
-    <Container>
-      <img src={perfilImage} alt="sua foto" />
-      <div className="text">
-        <p>Candice J. B.</p>
+export function LoggedUser({ data }) {
+  console.log(data)
+  function clientType() {
+    if (data.type === 'client') {
+      return (
         <span>
-          {starCount ? starCount : '0'} Stars{' '}
+          {data.starCount ? data.starCount : '0'} Stars{' '}
           <Star weight="fill" size="1.6rem" />
         </span>
+      )
+    }
+  }
+
+  return (
+    <Container>
+      <img src={data.profileImage} alt="sua foto" />
+      <div className="text">
+        <p>{data.name}</p>
+        {clientType()}
       </div>
-      <button type="button" onClick={handleLogout}>
-        Sair
-      </button>
+      <button type="button">Sair</button>
     </Container>
   )
 }

@@ -111,3 +111,18 @@ export const listBook = [
     }
   }
 ]
+
+export const clientInfo = {
+  name: 'Candice J. B.',
+  starCount: '453',
+  profileImage:
+    'https://media1.fdncms.com/pittsburgh/imager/u/zoom/19706445/0000.jpg',
+  type: 'client'
+}
+
+export const proInfo = {
+  name: 'Jonathan',
+  profileImage:
+    'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jonathan_Van_Ness%2C_2018-04.jpg/200px-Jonathan_Van_Ness%2C_2018-04.jpg',
+  type: 'pro'
+}

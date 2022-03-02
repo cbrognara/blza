@@ -9,12 +9,12 @@ import CarouselPlaces from '../../components/CarouselPlaces/CarouselPlaces'
 import { CarouselBook } from '../../components/CarouselBook/CarouselBook'
 
 // Dados da aplicação
-import { listPlaces, listBook } from '../../components/Data/Data'
+import { listPlaces, listBook, clientInfo } from '../../components/Data/Data'
 
 export function AreaLogada() {
   return (
     <>
-      <Header />
+      <Header userData={clientInfo} />
 
       <ContainerSections>
         <FavoriteSection>

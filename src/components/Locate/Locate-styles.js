@@ -9,6 +9,7 @@ export const Container = styled.section`
   color: var(--secondary-500);
   margin-top: 10rem;
   margin-bottom: 8rem;
+  padding: 0 2.4rem;
 
   h2 {
     width: 100%;
