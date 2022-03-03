@@ -19,7 +19,7 @@ export function CardBook({ service, proImage, localName, address }) {
           <Status>AGENDADO</Status>
         </Row>
         <Row>
-          <MapPinLine weight="duotone" size="3rem" />
+          <MapPinLine weight="fill" size="3rem" />
           <Column>
             <h4>MegaCulture</h4>
             <AddressContent href="/">

@@ -126,3 +126,41 @@ export const proInfo = {
     'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Jonathan_Van_Ness%2C_2018-04.jpg/200px-Jonathan_Van_Ness%2C_2018-04.jpg',
   type: 'pro'
 }
+
+export const calendar = [
+  {
+    day: '18',
+    weekDay: 'Segunda',
+    month: 'Fevereiro',
+    isToday: true,
+    id: 1,
+    times: [
+      {
+        hour: '10:20',
+        service: 'Coloração',
+        localName: 'MegaCulture',
+        address: 'Av. Rio das Pedras 1118 Aricanduva',
+        client: {
+          imageUrl:
+            'https://contigo.uol.com.br/media/_versions/fev22/naiara-azevedo-bbb22_widemd.jpeg',
+          name: 'Candice',
+          recurrence: '12x Cliente Recorrente',
+          email: 'candyjb@sweet.com'
+        }
+      },
+      {
+        hour: '10:20',
+        service: 'Corto Cabelo e Pinto',
+        localName: 'MegaCulture',
+        address: 'Av. Rio das Pedras 1118 Aricanduva',
+        client: {
+          imageUrl:
+            'https://static1.purepeople.com.br/articles/6/29/88/76/@/3384214-naiara-azevedo-ja-viveu-uma-briga-contra-opengraph_1200-1.jpg',
+          name: 'Clarice',
+          recurrence: '12x Cliente Recorrente',
+          email: 'candyjb@sweet.com'
+        }
+      }
+    ] // times
+  } // days
+]
