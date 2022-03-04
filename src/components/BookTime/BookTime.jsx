@@ -10,10 +10,12 @@ import {
 
 export default function BookTime({ data }) {
   return (
-    <Container>
+    <Container isCurrent={data.isCurrent}>
       <Row className="time-row">
-        <Clock size="1.6rem" />
-        <span>{data.hour}</span>
+        <span>
+          <Clock size="1.6rem" />
+          {data.hour}
+        </span>
         <h3>{data.service}</h3>
       </Row>
       <Row>
