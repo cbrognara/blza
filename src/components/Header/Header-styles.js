@@ -14,7 +14,6 @@ export const Container = styled.header`
 
 export const Content = styled.div`
   display: flex;
-  flex-wrap: wrap;
   gap: 4rem;
   align-items: center;
   justify-content: space-between;

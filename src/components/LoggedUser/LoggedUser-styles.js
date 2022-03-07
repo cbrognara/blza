@@ -8,11 +8,6 @@ export const Container = styled.div`
   display: flex;
   align-items: ${props => (props.starCount ? '' : 'center')};
 
-  img {
-    width: 7.2rem;
-    height: 7.2rem;
-  }
-
   button {
     padding: 2.4rem 1.6rem;
     background: var(--secondary-500);
@@ -65,4 +60,10 @@ export const Container = styled.div`
       padding: 0.8rem 1.6rem;
     }
   }
+`
+
+export const ContainerImage = styled.div`
+  width: 7.2rem;
+  height: 7.2rem;
+  background-image: ${props => `url(${props.profileImage})`};
 `

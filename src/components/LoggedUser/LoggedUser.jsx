@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from './LoggedUser-styles'
+import { Container, ContainerImage } from './LoggedUser-styles'
 import { Star } from 'phosphor-react'
 
 export function LoggedUser({ data }) {
@@ -17,7 +17,7 @@ export function LoggedUser({ data }) {
 
   return (
     <Container>
-      <img src={data.profileImage} alt="sua foto" />
+      <ContainerImage>{data.profileImage}</ContainerImage>
       <div className="text">
         <p>{data.name}</p>
         {clientType()}

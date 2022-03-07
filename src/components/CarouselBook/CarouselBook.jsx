@@ -33,7 +33,7 @@ export function CarouselBook({ data }) {
             spaceBetween: 8
           },
           1090: {
-            slidesPerView: 1.5,
+            slidesPerView: 3,
             spaceBetween: 8
           }
         }}
