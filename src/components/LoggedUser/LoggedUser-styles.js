@@ -66,4 +66,6 @@ export const ContainerImage = styled.div`
   width: 7.2rem;
   height: 7.2rem;
   background-image: ${props => `url(${props.profileImage})`};
+  background-size: cover;
+  background-position: top;
 `

@@ -17,7 +17,7 @@ export function LoggedUser({ data }) {
 
   return (
     <Container>
-      <ContainerImage>{data.profileImage}</ContainerImage>
+      <ContainerImage profileImage={data.profileImage} />
       <div className="text">
         <p>{data.name}</p>
         {clientType()}
