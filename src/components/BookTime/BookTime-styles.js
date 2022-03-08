@@ -6,9 +6,18 @@ export const Container = styled.div`
   color: var(--secondary-500);
   padding: 1.6rem;
   margin-bottom: 2rem;
+
   background: var(--primary-light-100);
   border: ${props =>
     props.isCurrent === true ? `2px solid var(--primary-light-500)` : 'none'};
+
+  &:hover {
+    background: var(--primary-light-200);
+  }
+
+  .btn {
+    cursor: pointer;
+  }
 
   span {
     font-size: 1.6rem;
@@ -23,6 +32,7 @@ export const Container = styled.div`
   h3 {
     font-size: 1.6rem;
     width: 100%;
+    padding-left: 1.6rem;
   }
 
   h4 {
@@ -59,6 +69,12 @@ export const Row = styled.div`
   align-items: center;
   min-width: 100%;
   padding: 0.4rem;
+
+  .service {
+    h3 {
+      padding-top: 2.4rem;
+    }
+  }
 `
 
 export const Column = styled.div`
@@ -88,5 +104,83 @@ export const ClientChip = styled.a`
     background-image: ${props => `url(${props.imgUrl})`};
     background-size: cover;
     background-position: center;
+  }
+`
+
+export const ClientInfo = styled.div`
+  background: var(--secondary-200);
+  padding: 0.4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1.6rem;
+  margin-bottom: 1.6rem;
+  color: var(--secondary-500);
+
+  .clientName {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+
+  .clientImage {
+    height: 4rem;
+    width: 4rem;
+    background-color: var(--primary-light-300);
+    border-radius: 4rem;
+
+    background-image: ${props => `url(${props.imgUrl})`};
+    background-size: cover;
+    background-position: center;
+    margin-right: 1.6rem;
+  }
+
+  .clientContacts {
+    gap: 1.6rem;
+
+    span {
+      font-size: 1.4rem;
+      font-weight: 400;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    @media (max-width: 800px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+`
+
+export const InnerModal = styled.div`
+  .day-time {
+    span {
+      font-size: 2rem;
+      line-height: 2.4rem;
+      display: flex;
+      align-items: center;
+      padding-right: 4rem;
+      gap: 0.8rem;
+
+      @media (max-width: 800px) {
+        font-size: 1.4rem;
+        gap: 0.4rem;
+        padding-right: 2rem;
+      }
+    }
+  }
+
+  .placeInfo {
+    gap: 0.8rem;
+    font-size: 1.4rem;
+    color: var(--secondary-500);
+
+    h4 {
+      font-weight: bold;
+    }
+
+    svg {
+      color: var(--secondary-400);
+    }
   }
 `

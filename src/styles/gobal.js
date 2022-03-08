@@ -81,4 +81,41 @@ font-size: 10px;
   button {
     border: none;
   }
+
+  .Modal {
+    background: rgba(255, 255, 255, 0.8);
+  border-radius: 24px;
+  width: 62rem;
+  height: 30rem;
+  padding: 2.4rem;
+  margin: auto;
+  align-self: center;
+  position: relative;
+
+  .close-modal {
+    position: absolute;
+    right: 2.4rem;
+    top: 2.4rem;
+    cursor: pointer;
+  }
+
+    
+  @media (max-width: 800px) {
+    width: 30rem;
+    height: 40rem;
+  }
+  }
+
+  .Overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    position: absolute;
+    background: rgba(50, 66, 107, 0.1);
+  backdrop-filter: blur(24px);
+  display: flex;
+
+  }
 `

@@ -142,6 +142,9 @@ export const calendar = [
     times: [
       {
         hour: '10:20',
+        day: '21',
+        weekDay: 'Quinta',
+        month: 'Fevereiro',
         service: 'Coloração',
         localName: 'MegaCulture',
         address: 'Av. Rio das Pedras 1118 Aricanduva',
@@ -150,8 +153,10 @@ export const calendar = [
           imageUrl:
             'https://contigo.uol.com.br/media/_versions/fev22/naiara-azevedo-bbb22_widemd.jpeg',
           name: 'Candice',
+          lastName: 'J. B.',
           recurrence: '12x Cliente Recorrente',
-          email: 'candyjb@sweet.com'
+          email: 'candyjb@sweet.com',
+          phone: '+55 11 999-9999'
         }
       },
       {

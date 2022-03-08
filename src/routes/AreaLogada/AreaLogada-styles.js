@@ -3,7 +3,8 @@ import styled from 'styled-components'
 export const ContainerSections = styled.div`
   max-width: 1152px;
   position: relative;
-  padding-top: 4rem;
+  margin: 8rem auto;
+  padding: 2rem;
 
   @media (max-width: 480px) {
     padding: 0;
