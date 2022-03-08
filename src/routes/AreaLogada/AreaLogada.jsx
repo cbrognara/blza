@@ -25,6 +25,14 @@ export function AreaLogada() {
           <CarouselBook data={listBook} />
         </FavoriteSection>
 
+        <FavoriteSection>
+          <div className="title">
+            <h1>Disponíveis para hoje</h1>
+            <a href="/">Ver todos</a>
+          </div>
+          <CarouselPlaces data={listPlaces} />
+        </FavoriteSection>
+
         <Locate />
 
         <FavoriteSection>

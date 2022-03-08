@@ -63,7 +63,7 @@ export const listBook = [
 
   {
     bookInfo: {
-      nameService: 'Coloração',
+      nameService: 'Corte',
       status: 'booked',
       date: {
         day: 31,
@@ -88,7 +88,7 @@ export const listBook = [
 
   {
     bookInfo: {
-      nameService: 'Coloração',
+      nameService: 'Hidratação',
       status: 'booked',
       date: {
         day: 31,

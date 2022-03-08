@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button } from '../../components/Button/Button'
 import { Input } from '../../components/Input/Input'
 import {
@@ -12,9 +12,18 @@ import {
 import { ReactComponent as Logo } from '../../assets/icons/logo.svg'
 
 export function AreaLogin() {
-  // function handleSubmit(event) {
-  //   event.preventDefault()
-  // }
+  const [email, setEmail] = useState('')
+  const [senha, setSenha] = useState('')
+
+  function handleEmail(event) {
+    setEmail(event.target.value)
+    console.log(event.target.value)
+  }
+
+  function handleSenha(event) {
+    setSenha(event.target.value)
+    console.log(event.target.value)
+  }
 
   return (
     <Container>
@@ -24,8 +33,18 @@ export function AreaLogin() {
         </div>
         <Title>Entre com Sua Conta</Title>
         <form>
-          <Input type="email" placeholder="email" />
-          <Input type="password" placeholder="senha" />
+          <Input
+            type="email"
+            placeholder="@email.com"
+            value={email}
+            onChange={handleEmail}
+          />
+          <Input
+            type="password"
+            placeholder="senha"
+            value={senha}
+            onChange={handleSenha}
+          />
           <EsqueciSenha href="/">Esqueci minha senha</EsqueciSenha>
           <Button color="primary" icon="arrow-right">
             Entrar
