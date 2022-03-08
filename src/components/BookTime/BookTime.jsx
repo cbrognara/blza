@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import {
-  MapPinLine,
   Clock,
   X,
   Calendar,
@@ -45,7 +44,7 @@ export default function BookTime({ data }) {
             <h3>{data.service}</h3>
           </Row>
           <Row>
-            <MapPinLine weight="fill" size="1.6rem" />
+            <MapPin weight="fill" size="1.6rem" />
             <Column>
               <h4>{data.localName}</h4>
               <p>{data.address}</p>
@@ -83,7 +82,7 @@ export default function BookTime({ data }) {
               </span>
             </Row>
 
-            <Row>
+            <Row className="service">
               <h3>{data.service}</h3>
             </Row>
 
