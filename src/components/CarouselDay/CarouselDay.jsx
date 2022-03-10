@@ -16,6 +16,25 @@ export function CarouselDay({ dataDay }) {
         mousewheel={true}
         breakpoints={{
           320: {
+            slidesPerView: 2.3,
+            spaceBetween: 2
+          },
+
+          620: {
+            slidesPerView: 2.4,
+            spaceBetween: 2
+          },
+
+          768: {
+            slidesPerView: 2.8,
+            spaceBetween: 2
+          },
+
+          820: {
+            slidesPerView: 3.8,
+            spaceBetween: 2
+          },
+          1024: {
             slidesPerView: 2.8,
             spaceBetween: 2
           }

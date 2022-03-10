@@ -8,28 +8,35 @@ import { CarouselDay } from '../CarouselDay/CarouselDay'
 export function CarouselCalendar({ data }) {
   return (
     <Swiper
+      className="calendar"
       spaceBetween={2}
       slidesPerView={4.4}
       mousewheel={true}
       breakpoints={{
         320: {
-          slidesPerView: 1.15,
+          slidesPerView: 1.2,
+          spaceBetween: 2
+        },
+        375: {
+          slidesPerView: 1.3,
           spaceBetween: 2
         },
         600: {
-          slidesPerView: 1.4,
-          spaceBetween: 2
-        },
-        730: {
           slidesPerView: 1.8,
           spaceBetween: 2
         },
-        950: {
+        768: {
+          slidesPerView: 2.6,
+          spaceBetween: 2
+        },
+
+        820: {
           slidesPerView: 2.1,
           spaceBetween: 2
         },
-        1040: {
-          slidesPerView: 2.4,
+
+        1024: {
+          slidesPerView: 2.6,
           spaceBetween: 2
         },
         1200: {

@@ -10,12 +10,14 @@ import {
 } from './CardBook-styles'
 import { MapPinLine } from 'phosphor-react'
 
-export function CardBook({ service, proImage, localName, address }) {
+export function CardBook({ data, proImage }) {
+  console.log(data)
+
   return (
     <Container>
       <Column>
         <Row>
-          <h3>Coloração</h3>
+          <h3>{data.bookInfo.nameService}</h3>
           <Status>AGENDADO</Status>
         </Row>
         <Row>

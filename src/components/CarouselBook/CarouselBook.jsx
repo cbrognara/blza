@@ -41,7 +41,7 @@ export function CarouselBook({ data }) {
         {data.map(item => {
           return (
             <SwiperSlide>
-              <CardBook proImage={item.bookInfo.pro.image} />
+              <CardBook data={item} proImage={item.bookInfo.pro.image} />
             </SwiperSlide>
           )
         })}
